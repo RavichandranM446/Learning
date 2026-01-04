@@ -8,5 +8,9 @@ namespace ConsoleApplication
 {
     internal class Exception
     {
+        static void Main(string[] args)
+        {
+            //Exception Handling
+        }
     }
 }
