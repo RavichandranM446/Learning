@@ -406,6 +406,23 @@ namespace ConsoleApplication
             {
                 Console.WriteLine(queue.Dequeue());
             }
+            Stack<string> stack2= new Stack<string>();
+            stack2.Push("mass");
+            stack2.Push("man");
+            stack2.Push("marvel");
+            while (stack2.Count > 0)
+            {
+                Console.WriteLine(stack2.Pop());
+            }
+            Queue<int> queue2 = new Queue<int>();
+            queue2.Enqueue(1);
+            queue2.Enqueue(2);
+            queue2.Enqueue(3);
+            while (queue2.Count > 0)
+            {
+                Console.WriteLine(queue2.Dequeue());
+            }
+
 
         }
     }
