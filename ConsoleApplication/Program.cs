@@ -378,7 +378,34 @@ namespace ConsoleApplication
             {
                 Console.WriteLine(sortedlist[value]);
             }
-
+            Dictionary<int,string> dictionary = new Dictionary<int,string>();
+            dictionary.Add(101, "hi");
+            dictionary.Add(102, "hii");
+            dictionary.Add(103, "hiii");
+            foreach( var item in dictionary.Keys)
+            {
+                Console.WriteLine(dictionary[item]);
+            }
+            //stack
+            Stack stack = new Stack();
+            stack.Push("mass");
+            stack.Push("ravi");
+            stack.Push("super");
+            while (stack.Count > 0)
+            {
+                Console.WriteLine(stack.Pop());
+            }
+            //Queue
+            Queue queue = new Queue();
+            queue.Enqueue("1");
+            queue.Enqueue("2");
+            queue.Enqueue("3");
+            queue.Enqueue("4");
+            queue.Enqueue("5");
+            while(queue.Count > 0)
+            {
+                Console.WriteLine(queue.Dequeue());
+            }
 
         }
     }
