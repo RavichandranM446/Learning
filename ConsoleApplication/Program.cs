@@ -1,4 +1,5 @@
-﻿using System.Transactions;
+﻿using System.Collections;
+using System.Transactions;
 
 namespace ConsoleApplication
     {
@@ -300,15 +301,85 @@ namespace ConsoleApplication
             //    Console.WriteLine(multi*num);
             //}
             //Console.ReadLine();
-            for (int i = 0; i <= 10; i++)
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    if (i < 6)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            //Console.ReadLine();
+            //Array
+            // datatype[] identifier = new datatype[];
+            //intialization:
+            //identifier[index]=value;
+            int[] marks=new int[10];
+            marks[0]=80;
+            marks[1] = 90;
+            marks[2] = 70;
+            marks[3] = 60;
+            marks[4] = 80;
+            marks[5] = 90;
+            marks[6] = 80;
+            marks[7] = 70;
+            marks[8] = 60;
+            marks[9] = 80;
+            //foreach(datatype identifer in collection){ logic }
+            foreach(int mark in marks)
             {
-                if (i < 6)
-                {
-                    continue;
-                }
-                Console.WriteLine(i);
+                Console.WriteLine("Marks "+mark);
             }
-            Console.ReadLine();
+            //Array List//
+            //ClassName ObjectName =new ClassName();
+            // ArrayList Identifier=new ArrayList();
+            //Intialization:
+            //Identifier.Add=value;
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("Mass");
+            arrayList.Add(123);
+            arrayList.Add('A');
+            arrayList.Add(89.5);
+            for (int i = 0; i < arrayList.Count; i++)
+            {
+                Console.WriteLine(arrayList[i]);
+            }
+            int[] numbers = { 10, 100, 20, 40, 50 };
+            foreach (int number in numbers)
+            {
+                Console.WriteLine("Numbers"+number);
+            }
+            //List
+            List<int> empId=new List<int>();
+            empId.Add(10);
+            empId.Add(100);
+            empId.Add(1000);
+            empId.Add(10000);
+            empId.Add(100000);
+            foreach(int id in empId)
+            {
+                Console.WriteLine("empId"+id);
+            }
+            //HashTable
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("101", "Mass");
+            hashtable.Add("102", "Mass Systems");
+            hashtable.Add("103", "Mass sys");
+            foreach(var item in hashtable.Keys)
+            {
+                 Console.WriteLine(hashtable[item]);
+            }
+            SortedList sortedlist=new SortedList();
+            sortedlist.Add("1", "A");
+            sortedlist.Add("2", "B");
+            sortedlist.Add("3", "C");
+            sortedlist.Add("4", "D");
+            foreach (var value in sortedlist.Keys)
+            {
+                Console.WriteLine(sortedlist[value]);
+            }
+
+
         }
     }
 }
