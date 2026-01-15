@@ -314,115 +314,181 @@ namespace ConsoleApplication
             // datatype[] identifier = new datatype[];
             //intialization:
             //identifier[index]=value;
-            int[] marks=new int[10];
-            marks[0]=80;
-            marks[1] = 90;
-            marks[2] = 70;
-            marks[3] = 60;
-            marks[4] = 80;
-            marks[5] = 90;
-            marks[6] = 80;
-            marks[7] = 70;
-            marks[8] = 60;
-            marks[9] = 80;
-            //foreach(datatype identifer in collection){ logic }
-            foreach(int mark in marks)
-            {
-                Console.WriteLine("Marks "+mark);
-            }
-            //Array List//
-            //ClassName ObjectName =new ClassName();
-            // ArrayList Identifier=new ArrayList();
-            //Intialization:
-            //Identifier.Add=value;
-            ArrayList arrayList = new ArrayList();
-            arrayList.Add("Mass");
-            arrayList.Add(123);
-            arrayList.Add('A');
-            arrayList.Add(89.5);
-            for (int i = 0; i < arrayList.Count; i++)
-            {
-                Console.WriteLine(arrayList[i]);
-            }
-            int[] numbers = { 10, 100, 20, 40, 50 };
-            foreach (int number in numbers)
-            {
-                Console.WriteLine("Numbers"+number);
-            }
-            //List
-            List<int> empId=new List<int>();
-            empId.Add(10);
-            empId.Add(100);
-            empId.Add(1000);
-            empId.Add(10000);
-            empId.Add(100000);
-            foreach(int id in empId)
-            {
-                Console.WriteLine("empId"+id);
-            }
-            //HashTable
-            Hashtable hashtable = new Hashtable();
-            hashtable.Add("101", "Mass");
-            hashtable.Add("102", "Mass Systems");
-            hashtable.Add("103", "Mass sys");
-            foreach(var item in hashtable.Keys)
-            {
-                 Console.WriteLine(hashtable[item]);
-            }
-            SortedList sortedlist=new SortedList();
-            sortedlist.Add("1", "A");
-            sortedlist.Add("2", "B");
-            sortedlist.Add("3", "C");
-            sortedlist.Add("4", "D");
-            foreach (var value in sortedlist.Keys)
-            {
-                Console.WriteLine(sortedlist[value]);
-            }
-            Dictionary<int,string> dictionary = new Dictionary<int,string>();
-            dictionary.Add(101, "hi");
-            dictionary.Add(102, "hii");
-            dictionary.Add(103, "hiii");
-            foreach( var item in dictionary.Keys)
-            {
-                Console.WriteLine(dictionary[item]);
-            }
-            //stack
-            Stack stack = new Stack();
-            stack.Push("mass");
-            stack.Push("ravi");
-            stack.Push("super");
-            while (stack.Count > 0)
-            {
-                Console.WriteLine(stack.Pop());
-            }
-            //Queue
-            Queue queue = new Queue();
-            queue.Enqueue("1");
-            queue.Enqueue("2");
-            queue.Enqueue("3");
-            queue.Enqueue("4");
-            queue.Enqueue("5");
-            while(queue.Count > 0)
-            {
-                Console.WriteLine(queue.Dequeue());
-            }
-            Stack<string> stack2= new Stack<string>();
-            stack2.Push("mass");
-            stack2.Push("man");
-            stack2.Push("marvel");
-            while (stack2.Count > 0)
-            {
-                Console.WriteLine(stack2.Pop());
-            }
-            Queue<int> queue2 = new Queue<int>();
-            queue2.Enqueue(1);
-            queue2.Enqueue(2);
-            queue2.Enqueue(3);
-            while (queue2.Count > 0)
-            {
-                Console.WriteLine(queue2.Dequeue());
-            }
+            //int[] marks=new int[10];
+            //marks[0]=80;
+            //marks[1] = 90;
+            //marks[2] = 70;
+            //marks[3] = 60;
+            //marks[4] = 80;
+            //marks[5] = 90;
+            //marks[6] = 80;
+            //marks[7] = 70;
+            //marks[8] = 60;
+            //marks[9] = 80;
+            ////foreach(datatype identifer in collection){ logic }
+            //foreach(int mark in marks)
+            //{
+            //    Console.WriteLine("Marks "+mark);
+            //}
+            ////Array List//
+            ////ClassName ObjectName =new ClassName();
+            //// ArrayList Identifier=new ArrayList();
+            ////Intialization:
+            ////Identifier.Add=value;
+            //ArrayList arrayList = new ArrayList();
+            //arrayList.Add("Mass");
+            //arrayList.Add(123);
+            //arrayList.Add('A');
+            //arrayList.Add(89.5);
+            //for (int i = 0; i < arrayList.Count; i++)
+            //{
+            //    Console.WriteLine(arrayList[i]);
+            //}
+            //int[] numbers = { 10, 100, 20, 40, 50 };
+            //foreach (int number in numbers)
+            //{
+            //    Console.WriteLine("Numbers"+number);
+            //}
+            ////List
+            //List<int> empId=new List<int>();
+            //empId.Add(10);
+            //empId.Add(100);
+            //empId.Add(1000);
+            //empId.Add(10000);
+            //empId.Add(100000);
+            //foreach(int id in empId)
+            //{
+            //    Console.WriteLine("empId"+id);
+            //}
+            ////HashTable
+            //Hashtable hashtable = new Hashtable();
+            //hashtable.Add("101", "Mass");
+            //hashtable.Add("102", "Mass Systems");
+            //hashtable.Add("103", "Mass sys");
+            //foreach(var item in hashtable.Keys)
+            //{
+            //     Console.WriteLine(hashtable[item]);
+            //}
+            //SortedList sortedlist=new SortedList();
+            //sortedlist.Add("1", "A");
+            //sortedlist.Add("2", "B");
+            //sortedlist.Add("3", "C");
+            //sortedlist.Add("4", "D");
+            //foreach (var value in sortedlist.Keys)
+            //{
+            //    Console.WriteLine(sortedlist[value]);
+            //}
+            //Dictionary<int,string> dictionary = new Dictionary<int,string>();
+            //dictionary.Add(101, "hi");
+            //dictionary.Add(102, "hii");
+            //dictionary.Add(103, "hiii");
+            //foreach( var item in dictionary.Keys)
+            //{
+            //    Console.WriteLine(dictionary[item]);
+            //}
+            ////stack
+            //Stack stack = new Stack();
+            //stack.Push("mass");
+            //stack.Push("ravi");
+            //stack.Push("super");
+            //while (stack.Count > 0)
+            //{
+            //    Console.WriteLine(stack.Pop());
+            //}
+            ////Queue
+            //Queue queue = new Queue();
+            //queue.Enqueue("1");
+            //queue.Enqueue("2");
+            //queue.Enqueue("3");
+            //queue.Enqueue("4");
+            //queue.Enqueue("5");
+            //while(queue.Count > 0)
+            //{
+            //    Console.WriteLine(queue.Dequeue());
+            //}
+            //Stack<string> stack2= new Stack<string>();
+            //stack2.Push("mass");
+            //stack2.Push("man");
+            //stack2.Push("marvel");
+            //while (stack2.Count > 0)
+            //{
+            //    Console.WriteLine(stack2.Pop());
+            //}
+            //Queue<int> queue2 = new Queue<int>();
+            //queue2.Enqueue(1);
+            //queue2.Enqueue(2);
+            //queue2.Enqueue(3);
+            //while (queue2.Count > 0)
+            //{
+            //    Console.WriteLine(queue2.Dequeue());
+            //}
+            //List<string> fruits=new List<string> { "apple","orange","banana"};
+            //try
+            //{
+            //    string fruit;
+            //    fruit = fruits[2];
+            //    Console.WriteLine("fruits" + fruit);
+            //}
+            //catch (ArgumentOutOfRangeException exception)
+            //{
+            //    Console.WriteLine(exception.Message);
+            //}
 
+            //Console.Write("Enter Your Name:");
+            //string name=Console.ReadLine();
+            //Console.WriteLine("Your name is "+name);
+            //Console.WriteLine("Enter your day");
+            //string day =Console.ReadLine();
+            //day = day.ToLower();
+            //switch (day)
+            //{
+            //    case "monday":
+            //        Console.WriteLine("Happy day");
+            //        break;
+            //    case "tuesday":
+            //        Console.WriteLine("warm day");
+            //        break;
+            //    case "wednesday":
+            //        Console.WriteLine("cool day");
+            //        break;
+            //    case "thursday":
+            //        Console.WriteLine("wing day");
+            //        break;
+            //    case "friday":
+            //        Console.WriteLine("cheer day");
+            //        break;
+            //    case "saturday":
+            //        Console.WriteLine("half day");
+            //        break;
+            //    case "sunday":
+            //        Console.WriteLine("jolly day");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid day");
+            //        break;
+            //}
+            //if (day == "monday" || day == "friday"||day == "tuesday" || day == "wednesday"||day == "thursday")
+            //{
+            //    Console.WriteLine("working da");
+            //}
+            //else if (day == "saturday")
+            //{
+            //    Console.WriteLine("Half working day");
+            //}
+            //else if (day == "sunday")
+            //{
+            //    Console.WriteLine("Holiday");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid day");
+            //}
+            Console.WriteLine("How many times you want to print your name:");
+            int name = int.Parse(Console.ReadLine());
+            for(int i = 0; i <= name; i++)
+            {
+                Console.WriteLine("Ravi");
+            }
 
         }
     }
