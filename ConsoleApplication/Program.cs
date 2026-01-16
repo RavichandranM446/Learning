@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Transactions;
+using System.Globalization;
 
 namespace ConsoleApplication
     {
@@ -483,11 +484,106 @@ namespace ConsoleApplication
             //{
             //    Console.WriteLine("Invalid day");
             //}
-            Console.WriteLine("How many times you want to print your name:");
-            int name = int.Parse(Console.ReadLine());
-            for(int i = 0; i <= name; i++)
+            //Console.WriteLine("Enter what you want to print:");
+            //string message=Console.ReadLine();
+            //Console.WriteLine("How many times you want to print your name:");
+            //int name = int.Parse(Console.ReadLine());
+            //for(int i = 0; i <= name; i++)
+            //{
+            //    Console.WriteLine(message);
+            //}
+            //Console.WriteLine("Enter any numbers to print:");
+            //int value=Convert.ToInt32(Console.ReadLine());
+            //while (value > 0)
+            //{
+            //    value--;
+            //    Console.WriteLine(value);
+            //}
+            //Console.WriteLine("Enter your password:");
+            //string password = Console.ReadLine();
+            //while (password != "admin123")
+            //{
+            //    Console.WriteLine("wrong passwords");
+            //    Console.WriteLine("Enter your password:");
+            //    password = Console.ReadLine();
+            //}
+            //Console.WriteLine("Login Successfully");
+            //Console.WriteLine("Enter your password:");
+            //string password = Console.ReadLine();
+
+            //while (password != "admin123")
+            //{
+            //    Console.WriteLine("Wrong password");
+            //    Console.WriteLine("Enter your password:");
+            //    password = Console.ReadLine();   // ⭐ important
+            //}
+
+            //Console.WriteLine("Login Successfully");
+            //int choice = 0;
+
+            //while (choice != 3)
+            //{
+            //    Console.WriteLine("1. Say Hello");
+            //    Console.WriteLine("2. Say Welcome");
+            //    Console.WriteLine("3. Exit");
+            //    Console.WriteLine("Enter Your Choice:");
+
+            //    choice = int.Parse(Console.ReadLine());
+
+            //    if (choice == 1)
+            //    {
+            //        Console.WriteLine("Hello");
+            //    }
+            //    else if (choice == 2)
+            //    {
+            //        Console.WriteLine("Welcome");
+            //    }
+            //    else if (choice == 3)
+            //    {
+            //        Console.WriteLine("Exit Message");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Invalid message");
+            //    }
+            //}
+
+            //Console.WriteLine("Successfully Implemented");
+
+            //int age = -10;
+            //string result = age > 0 ? "valid" : "Invalid";
+            //Console.WriteLine(result);
+            //Numeric Formatting//
+            //double num = 1234.56789;
+            //Console.WriteLine(num);
+            //Console.WriteLine(num.ToString("F2"));
+            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //CultureInfo.CurrentCulture = new CultureInfo("en-IN");
+            //double amount = 1500;
+            //Console.WriteLine(amount.ToString("C"));
+            //Console.WriteLine(num.ToString("N"));
+            //double percent = 0.75;
+            //Console.WriteLine(percent.ToString("P"));
+            //Console.WriteLine(num.ToString("0.000"));
+            //Console.WriteLine("Enter a number:");
+            //string input = Console.ReadLine();
+
+            //int number;
+
+            //if (int.TryParse(input, out number))
+            //{
+            //    Console.WriteLine("Valid number: " + number);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input");
+            //}
+            Console.WriteLine("Enter a Number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("Ravi");
+                Console.WriteLine("{0} * {1} = {2}", num, i, num * i);
             }
 
         }
